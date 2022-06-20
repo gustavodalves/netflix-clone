@@ -28,7 +28,7 @@ const Movie = ({data, image}) => {
         <>
             <Container>
                 <button onClick={() => setIsModalVisible(!isModalVisible)}>
-                    <img className="movie" src={image[1]} alt={data.title} />
+                    <img className="movie" src={image[0]} alt={data.title} />
                     {/* <p className="title">{title}</p> */}
                 </button> 
             </Container>

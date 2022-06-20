@@ -34,10 +34,11 @@ const Container = styled.div`
     }
 
     .movie {
-        width: 310px;
+        width: 210px;
         border-radius: .5rem;
         transition: all .3s;
     }
+
 `
 
 export { 

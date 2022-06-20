@@ -3,6 +3,11 @@ import styled from 'styled-components'
 const Container = styled.div`
     position: relative;
     padding: 0 1em;
+    margin: 80px 0;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 `
 
 const Genre = styled.a `
@@ -50,6 +55,7 @@ const MovieList = styled.div`
     align-items: center;
     list-style: none;
     overflow: hidden;
+    column-gap: 1em;
     scroll-behavior: smooth;
 `
 
