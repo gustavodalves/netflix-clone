@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { Container } from './MovieStyle'
-import Modal from '../Modal/Modal.jsx'
+import { Container } from './styles'
+import Modal from '../Modal'
 import { useEffect } from 'react';
 
 import StarRatings from 'react-star-ratings';

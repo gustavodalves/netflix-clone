@@ -8,6 +8,19 @@ const Container = styled.div`
     &:last-child {
         margin-bottom: 0;
     }
+
+
+.btn {
+    &-left{
+        left: 0;
+        img {
+            transform: rotate(180deg);
+        }
+    }
+    &-right {
+        right: 0;
+    }
+}
 `
 
 const Genre = styled.a `

@@ -1,6 +1,6 @@
-import { Container } from './MovieGridStyle'
+import { Container } from './styles'
 
-import Movie from '../Movie/Movie'
+import Movie from '../Movie'
 
 const MovieGrid = ({ data }) => {
 

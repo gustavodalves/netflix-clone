@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-import { Container, Content, Item } from './NavbarStyled'
+import { Container, Content, Item } from './styles'
 
 const NAVBAR_COLOR_DEFAULT = 'rgba(0, 0, 0, 0)'
 const NAVBAR_COLOR_SCROLL = 'rgba(0, 0, 0, 1)'

@@ -1,9 +1,7 @@
 import { useRef } from "react"
 import { Button, MovieList, Container, Genre } from './styles'
 
-import Movie from '../Movie/Movie'
-
-import './MovieCarousel.scss';
+import Movie from '../Movie'
 
 const MovieCarousel = ({data, title}) => {
     const carousel = useRef(null)

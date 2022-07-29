@@ -1,12 +1,10 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 
-import MovieCarousel from "../../components/MovieCarousel/MovieCarousel"
-import MovieGrid from "../../components/MovieGrid/MovieGrid"
-import Navbar from "../../components/Navbar/Navbar"
-import { Container } from './HomeStyle'
-
-import './HomeStyled.scss';
+import MovieCarousel from "./components/MovieCarousel"
+import MovieGrid from "./components/MovieGrid"
+import Navbar from "./components/Navbar"
+import { Container } from './styles'
 
 const MOVIES_URL = `${process.env.REACT_APP_BASE_URL}movie/popular?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1`
 const GENRE_URL = `${process.env.REACT_APP_BASE_URL}genre/movie/list?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`

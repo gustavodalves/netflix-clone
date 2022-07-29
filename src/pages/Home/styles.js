@@ -5,6 +5,15 @@ const Container = styled.div `
     min-height: 100vh;
     position: relative;
 
+    #carousel {
+        margin-top: -15rem;
+    }
+
+    .scroll {
+        scroll-snap-type: y mandatory;
+    }
+
+
     section {
         scroll-snap-align: start;
     }
