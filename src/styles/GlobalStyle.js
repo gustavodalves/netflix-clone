@@ -14,6 +14,8 @@ export default createGlobalStyle`
             sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        background-color: #000;
+        color: #e1e1e1;
     }
 
     code {
