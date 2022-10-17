@@ -37,7 +37,12 @@ const Container = styled.div`
         width: 210px;
         border-radius: .5rem;
         transition: all .3s;
+        
+                @media (max-width: 500px) {
+                        width: 120px;
+                }
     }
+    
 
 `
 
