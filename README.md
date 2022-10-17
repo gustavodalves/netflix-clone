@@ -2,6 +2,7 @@
 
 <img src="public/favicon.png" width="200">
 > Application created with create-react-app
+> https://netflix-clone-gdalves.herokuapp.com/
 
 ## Installation
 
