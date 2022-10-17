@@ -7,10 +7,9 @@ Application created with create-react-app
 https://netflix-clone-gdalves.herokuapp.com/
 
 ## Installation
-
 In the project directory, you can run:
 
-### `npm intall`/`yarn`
+### `npm install`/`yarn`
 
 to install all the necessary departments of the project
 
@@ -29,6 +28,10 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
+
+## API's
+
+The project uses the MovieDB(TMDB) Api to get the movie data
 
 ## Demo
 
