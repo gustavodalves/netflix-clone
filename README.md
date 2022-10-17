@@ -1,8 +1,10 @@
 # Netflix Interface - Clone
 
 <img src="public/favicon.png" width="200">
-> Application created with create-react-app
-> https://netflix-clone-gdalves.herokuapp.com/
+Application created with create-react-app
+
+## Project
+https://netflix-clone-gdalves.herokuapp.com/
 
 ## Installation
 
