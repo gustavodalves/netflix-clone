@@ -1,1 +1,26 @@
 # Netflix Interface - Clone
+
+<img src="public/favicon.png" width="200">
+> Application created with create-react-app
+
+## Installation
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+
+## Demo
+
+### Desktop
+![Captura de tela 2022-10-17 141543](https://user-images.githubusercontent.com/45016362/196241358-27518910-2786-4c58-8d28-53d91efb2262.png)
+![Captura de tela 2022-10-17 141628](https://user-images.githubusercontent.com/45016362/196241539-495b79e6-9863-4924-9c81-598bd3b7f493.png)
+
+### Mobile
+![Captura de tela 2022-10-17 142241](https://user-images.githubusercontent.com/45016362/196242562-45170d00-5de0-4e1e-a6ba-a2e7d2e01ab2.png)
