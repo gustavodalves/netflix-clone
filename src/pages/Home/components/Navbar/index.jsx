@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 
 import { Container, Content, Item } from './styles'
 
+import logo from '../../../../assets/netflix.svg'
+
 const NAVBAR_COLOR_DEFAULT = 'rgba(0, 0, 0, 0)'
 const NAVBAR_COLOR_SCROLL = 'rgba(0, 0, 0, 1)'
 
@@ -26,7 +28,7 @@ const Navbar = () => {
             <Container color={navbarColor}>
                 <Content> 
                     <Item>
-                        <img src='https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg' alt='logo'/>
+                        <img src={logo} alt='logo'/>
                     </Item>
 
                     <Item>

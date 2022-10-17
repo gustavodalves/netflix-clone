@@ -1,6 +1,8 @@
 import { useRef } from "react"
 import { Button, MovieList, Container, Genre } from './styles'
 
+import arrowImage from '../../../../assets/right-arrow.png'
+
 import Movie from '../Movie'
 
 const MovieCarousel = ({data, title}) => {
@@ -23,7 +25,7 @@ const MovieCarousel = ({data, title}) => {
                 className="btn btn-left" 
                 onClick={handleLeftClick}
             > 
-                <img src="https://cdn.iconscout.com/icon/free/png-256/right-arrow-1438234-1216195.png" alt="Left" />
+                <img src={arrowImage} alt="Left" />
             </Button>
 
             <MovieList ref={carousel}>
@@ -47,7 +49,7 @@ const MovieCarousel = ({data, title}) => {
                 className="btn btn-right"
                 onClick={handleRightClick} 
             > 
-                <img src="https://cdn.iconscout.com/icon/free/png-256/right-arrow-1438234-1216195.png" alt="Right" />
+                <img src={arrowImage} alt="Right" />
             </Button>
         </Container>
     )

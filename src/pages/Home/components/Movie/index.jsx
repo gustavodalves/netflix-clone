@@ -42,7 +42,7 @@ const Movie = ({data, image}) => {
                         </a>
                     </div>
                     <div className="content">
-                        <span className='release=date'> {handleFormatDate(data.release_date)} </span>
+                        <span className='release-date'> {handleFormatDate(data.release_date)} </span>
                             <div className="row">
                                 <h1>{data.title}</h1>
                                 <StarRatings

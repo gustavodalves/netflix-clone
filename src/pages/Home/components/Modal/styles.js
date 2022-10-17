@@ -16,12 +16,18 @@ const ModalContainer = styled.div`
         background-color: rgb(20, 20, 20);
         color: #000;
         width: 45%;
-        min-width: 500px;
         height: 90%;
         min-height: 700px;
         border-radius: 10px;
         position: relative;
         overflow: auto;
+            
+        @media (max-width: 1100px) {
+            width: 80%;
+        }
+        @media (max-width: 500px) {
+            min-width: 400px;
+        }
 
         .close {
             position: relative;
@@ -66,6 +72,7 @@ const ModalContainer = styled.div`
 
 const ModalContent = styled.div`
     background-color: rgb(20, 20, 20);
+    padding-bottom: 12px;
     
     .header {
         position: relative;
@@ -120,6 +127,20 @@ const ModalContent = styled.div`
     .content {
         padding: 0 1rem;
         color: #fff;
+
+        @media (max-width: 600px) {            
+            .release-date {
+                text-align: center;
+                display: block;
+            }
+
+            .genres {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 16px auto;
+            }
+        }
 
         .row {
             display: flex;
