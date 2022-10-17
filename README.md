@@ -31,7 +31,7 @@ Your app is ready to be deployed!
 
 ## API's
 
-The project uses the MovieDB(TMDB) Api to get the movie data
+The project uses the MovieDB(TMDB) Api to get the movie data - https://www.themoviedb.org/
 
 ## Demo
 
