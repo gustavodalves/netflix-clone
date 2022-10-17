@@ -3,17 +3,13 @@
 <img src="public/favicon.png" width="200">
 > Application created with create-react-app
 
-## Dependencies
+## Installation
 
 In the project directory, you can run:
 
 ### `npm intall`/`yarn`
 
 to install all the necessary departments of the project
-
-## Installation
-
-In the project directory, you can run:
 
 ### `npm start`
 
