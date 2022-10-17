@@ -40,4 +40,5 @@ The project uses the MovieDB(TMDB) Api to get the movie data - https://www.themo
 ![Captura de tela 2022-10-17 141628](https://user-images.githubusercontent.com/45016362/196241539-495b79e6-9863-4924-9c81-598bd3b7f493.png)
 
 ### Mobile
+![Captura de tela 2022-10-17 152713](https://user-images.githubusercontent.com/45016362/196254322-004af6e2-3658-4233-a752-bbdcd996c8d9.png)
 ![Captura de tela 2022-10-17 142241](https://user-images.githubusercontent.com/45016362/196242562-45170d00-5de0-4e1e-a6ba-a2e7d2e01ab2.png)
