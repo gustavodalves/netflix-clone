@@ -74,7 +74,7 @@ const MovieList = styled.div`
 
 const Button = styled.button`
     position: absolute;
-    z-index: 999;
+    z-index: 1;
     cursor: pointer;
     height: 100%;
     top: 50%;
