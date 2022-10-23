@@ -9,10 +9,9 @@ const useAxios = (service) => {
     service()
       .then(({ data }) => {
         setFetchData(data);
-        console.log(data)
-    })
+      })
       .catch(({ response }) => setError(response.data))
-      .finally(() => setIsLoading(true));
+      .finally(() => setIsLoading(false));
   }, []);
 
   return [fetchData, error, isLoading];

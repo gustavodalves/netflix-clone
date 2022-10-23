@@ -1,35 +1,13 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-const Container = styled.div `
+const Container = styled.div`
     background-color: black;
     min-height: 100vh;
     position: relative;
 
-    #carousel {
+    .carousel {
         margin-top: -15rem;
     }
-
-    .scroll {
-        scroll-snap-type: y mandatory;
-    }
-
-
-    section {
-        scroll-snap-align: start;
-    }
-
-    .cover {
-        position: relative;
-        img {
-            width: 100%;
-            border-radius: .3rem;
-            background-size: cover;
-            background-position: center;
-            background-color: rgba(0,0,0,.2);
-            border:0 !important;
-        }
-    }
-
 
     .info {
         color: #fff;
@@ -78,7 +56,15 @@ const Container = styled.div `
             }
         }
     }
-`
+`;
+
+const Banner = styled.div`
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.01) 100%), linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 100%), 
+                        url(${(props) => props.src});
+    background-size: cover;
+    height: 100vh;
+    border: none;
+`;
 
 // const Input = styled.div`
 //     width: 15rem;
@@ -86,7 +72,7 @@ const Container = styled.div `
 //     display: block;
 //     margin: 20px auto 0;
 //     border: none;
-    
+
 //     input {
 //         width: 100%;
 //         padding: 5px;
@@ -120,5 +106,6 @@ const Container = styled.div `
 // `
 
 export {
-    Container,
-}
+  Container,
+  Banner,
+};

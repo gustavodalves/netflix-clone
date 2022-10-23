@@ -3,7 +3,7 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import routes from '../routes';
 import PrivateRoute from './PrivateRoute';
 
-const AppRoutes = () => {
+function AppRoutes() {
     return (
         <BrowserRouter>
             <Routes>
@@ -14,7 +14,7 @@ const AppRoutes = () => {
                         return <Route key={path} path={path} element={<Navigate to={redirect} />} />
                     }
 
-                    else if(isPrivate) {
+                    if(isPrivate) {
                         return(
                             <Route key={path} element={<PrivateRoute />}>
                                 <Route path={path} element={<Component />} />
