@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -37,7 +38,6 @@ const Container = styled.div`
         width: 210px;
         border-radius: .5rem;
         transition: all .3s;
-        
                 @media (max-width: 500px) {
                         width: 120px;
                 }

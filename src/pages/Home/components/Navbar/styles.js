@@ -7,6 +7,10 @@ const Container = styled.div`
    z-index: 999;
    color: rgba(229, 9, 20, 1);
    background-color: ${(props) => props.color};
+   backdrop-filter: blur( ${(props) => {
+    console.log(props)
+   return props.blured ? '13.5px' : '0'
+   }} );
    transition: all .25s ease-out;
    `
 

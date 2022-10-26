@@ -1,12 +1,14 @@
-import { useState } from 'react';
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable react/prop-types */
+import { useState , useEffect } from 'react';
+import StarRatings from 'react-star-ratings';
 import { Container } from './styles'
 import Modal from '../Modal'
-import { useEffect } from 'react';
 
-import StarRatings from 'react-star-ratings';
 const STORED_GENRES = JSON.parse(localStorage.getItem("genres"));
 
-const Movie = ({data, image}) => { 
+// eslint-disable-next-line react/prop-types
+function Movie({data, image}) { 
     const [ isModalVisible, setIsModalVisible ] = useState(false)
 
     useEffect(() => {
@@ -20,14 +22,12 @@ const Movie = ({data, image}) => {
     }, [isModalVisible])
 
 
-    const handleFormatDate = (date) => {
-        return new Date(date).toLocaleDateString("en-US")
-    }
+    const handleFormatDate = (date) => new Date(date).toLocaleDateString("en-US")
 
     return (
         <>
             <Container>
-                <button onClick={() => setIsModalVisible(!isModalVisible)}>
+                <button type="button" onClick={() => setIsModalVisible(!isModalVisible)}>
                     <img className="movie" src={image[0]} alt={data.title} />
                     {/* <p className="title">{title}</p> */}
                 </button> 
@@ -35,7 +35,7 @@ const Movie = ({data, image}) => {
 
             {isModalVisible && 
                 <Modal onClose={() => setIsModalVisible(false)}>
-                    <div onClick={() => console.log(data)} className="header">
+                    <div className="header">
                         <a href='#' target="_blank">
                             <img className="movie" src={image[1]} alt={data.title} />
                             <img className='play' src='https://cdn.iconscout.com/icon/free/png-256/right-arrow-1438234-1216195.png' alt="reproduzir"/>
@@ -64,7 +64,7 @@ const Movie = ({data, image}) => {
                                     </div>
                                 </div>
                             <div className="row">
-                                <button> Play </button>
+                                <button type="button"> Play </button>
                             </div>
                     </div>
                 </Modal> 

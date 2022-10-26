@@ -1,9 +1,9 @@
+/* eslint-disable react/prop-types */
 import { Container } from './styles'
 
 import Movie from '../Movie'
 
-const MovieGrid = ({ data }) => {
-
+function MovieGrid({ data }) {
     return (
         <Container>
             {data.map((movie) => {
@@ -23,4 +23,4 @@ const MovieGrid = ({ data }) => {
     )
 }
 
-export default MovieGrid
+export default MovieGrid;

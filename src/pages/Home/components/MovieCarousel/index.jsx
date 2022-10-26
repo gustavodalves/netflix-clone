@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useRef } from "react"
 import { Button, MovieList, Container, Genre } from './styles'
 
@@ -5,7 +6,7 @@ import arrowImage from '../../../../assets/right-arrow.png'
 
 import Movie from '../Movie'
 
-const MovieCarousel = ({data, title}) => {
+function MovieCarousel({data, title}) {
     const carousel = useRef(null)
 
     const handleLeftClick= (event) => {
