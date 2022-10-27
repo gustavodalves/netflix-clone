@@ -1,7 +1,15 @@
 import styled from "styled-components";
 
 export const Name = styled.p`
+  transition: color .2s ease-in-out;
   text-align: center;
+`
+
+export const ImageProfile = styled.img`
+  transition: border .2s ease-in-out;
+  width: 120px;
+  border: 1px solid transparent;
+  border-radius: 2px;
 `
 
 export const Root = styled.div`
@@ -10,13 +18,19 @@ export const Root = styled.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 240px;
-  
   div {
     cursor: pointer;
     transition: all .1s linear;
-    :hover {
-      transform: translateY(-8px);
+  }
+
+  :hover  {
+
+    ${Name} {
+      color: #fff;
+    }
+
+    ${ImageProfile} {
+      border-color: #fff;
     }
   }
 `

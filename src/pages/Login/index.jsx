@@ -30,7 +30,7 @@ function Login() {
       setIsFetching(false)
 
       if(isLogged) {
-        navigate('/')
+        navigate('/profiles')
       }
     }
 

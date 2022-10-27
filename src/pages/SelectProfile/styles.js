@@ -1,12 +1,33 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
-export const Container = styled.div`
+const show = keyframes`
+from {
+    transform: scale(1.5);
+    display: none;
+    overflow: hidden;
+  }
+  to {
+    display: block;
+    transform: initial; 
+  }
+`;
+
+export const ProfileContainer = styled.div`
   display: flex;
-  flex-grow: 1;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 30px;
-  min-height: 100vh;
+  margin-top: 30px;
+  max-width: 80%;
 `
 
-export const Test = styled.data``
+export const Container = styled.div`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: ${show} 1s;
+`

@@ -1,7 +1,7 @@
 import Profile from "./components/Profile";
 
 import profileImage from '../../assets/profile.png'
-import { Container } from "./styles";
+import { ProfileContainer, Container } from "./styles";
 
 const profiles = [
   {
@@ -12,16 +12,27 @@ const profiles = [
     name: 'Leonardo',
     img: profileImage,
   },
+  {
+    name: 'John Doe',
+    img: profileImage,
+  },
+  {
+    name: 'Bruno',
+    img: profileImage,
+  },
 ]
 
 function SelectProfile() {
   return(
     <Container>
-      {
-        profiles.map(profile => (
-            <Profile key={profile.name} src={profile.img} name={profile.name} />
-          ))
-      }
+      <h1> Quem está assistindo? </h1>
+      <ProfileContainer>
+        {
+          profiles.map(profile => (
+              <Profile key={profile.name} src={profile.img} name={profile.name} />
+            ))
+        }
+      </ProfileContainer>
     </Container>
   )
 }
