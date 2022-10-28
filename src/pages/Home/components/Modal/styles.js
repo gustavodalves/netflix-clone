@@ -1,9 +1,11 @@
 import styled, { keyframes } from 'styled-components'
 
 const modal = keyframes`
+  from {
+    transform: scale(0);
+  }
   to {
-    opacity: initial;
-    transform: initial; 
+    transform: scale(1);
   }
 `;
 
@@ -28,7 +30,7 @@ const ModalContainer = styled.div`
         border-radius: 10px;
         position: relative;
         overflow: auto;
-        animation: ${modal} 0.4s forwards;
+        animation: ${modal} .4s forwards;
             
         @media (max-width: 1100px) {
             width: 80%;
